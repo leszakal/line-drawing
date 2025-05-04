@@ -277,6 +277,7 @@ void showTimeTestsMenu(BresenhamLine bresenham, XiaolinWuLine wu) {
 						std::cout << "Failed to open files for writing results -- returning to menu...\n" << std::endl;
 						return;
 					}
+					// Keeping units in output file for clarity
 					of_bresenham << timeb << std::endl;
 					of_wu << timew << std::endl;
 				}
