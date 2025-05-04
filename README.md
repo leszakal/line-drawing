@@ -117,7 +117,7 @@ Selecting option 1 in the main menu will allow you to render some preset lines. 
 
 ### Example 2: Rendering Lines from Custom Endpoints
 
-Selecting option 2 will prompt you to enter in start and endpoints for a Bresenham-style line and a Xiaolin Wu-style line. For clarity on input format, if `(x0, y0) = (0, 0)` and `(x1, y1) = (1000, 500)` then the input for that line should be `0 0 1000 500` These line will be rendered on the same screen, so be careful of unintentional overlap.'
+Selecting option 2 will prompt you to enter in start and endpoints for a Bresenham-style line and a Xiaolin Wu-style line. For clarity on input format, if `(x0, y0) = (0, 0)` and `(x1, y1) = (1000, 500)` then the input for that line should be `0 0 1000 500` These line will be rendered on the same screen, so be careful of unintentional overlap.
 
 ![A terminal showing the program's menu. It displays inputs and outputs for the "Render lines from custom endpoints" option. Below the text is a window showing the rendered lines.](/assets/custom.png)
 
