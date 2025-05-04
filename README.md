@@ -7,6 +7,11 @@ Test input files and the script used to generate them (`generate_endpoints.py`) 
 
 The `assets/` directory just holds images used in this README. 
 
+**A note on window resolution** -- In order to see the pixels more clearly, the program is set to 'zoom' in on the lines. If you wish to change the zoom amount or enable full resolution, modify or comment out this line in `render.cpp`:
+```cpp
+SDL_SetRenderLogicalPresentation(renderer, 300, 225, SDL_LOGICAL_PRESENTATION_LETTERBOX);
+```
+
 ## Setup
 
 This project uses CMake to handle building. It should automatically download SDL3 before compiling. The code assumes builds are located in `out/build/{$presetName}/`. The program has been tested on Windows and Debian.
@@ -106,7 +111,8 @@ If you need to run this on a system without a GUI, add the `-DSDL_UNIX_CONSOLE_B
 
 #### Alternatives to CMake
 If CMake doesn't work, you'll need to set up SDL3 yourself. See this [installation guide](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md) for help. There's also additional platform-specific info here: https://github.com/libsdl-org/SDL/tree/main/docs.
-
+___
+___
 ## Usage
 
 The program has several menus which should be fairly straightforward to use. For further guidance, please consult the following example screenshots:
