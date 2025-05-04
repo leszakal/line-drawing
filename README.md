@@ -99,10 +99,12 @@ ___
 	cd out/build/macos-debug
 	./algo_project
 	```
-### Building without a GUI
+___
+### Additional Build Guidance
+#### Building without a GUI
 If you need to run this on a system without a GUI, add the `-DSDL_UNIX_CONSOLE_BUILD=ON` option to the initial CMake command like so: `cmake --preset linux-debug -DSDL_UNIX_CONSOLE_BUILD=ON`. Only the timed testing option will work in this case.
 
-### Alternatives to CMake
+#### Alternatives to CMake
 If CMake doesn't work, you'll need to set up SDL3 yourself. See this [installation guide](https://github.com/libsdl-org/SDL/blob/main/INSTALL.md) for help. There's also additional platform-specific info here: https://github.com/libsdl-org/SDL/tree/main/docs.
 
 ## Usage
