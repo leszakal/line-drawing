@@ -219,7 +219,7 @@ void showTimeTestsMenu(BresenhamLine bresenham, XiaolinWuLine wu) {
 			if (tokens[1] == "tests" || tokens[1] == "test") {
 				std::string path = "../../../tests/";
 				for (const auto& entry : std::filesystem::directory_iterator(path)) {
-					if (entry.path().filename() != "generate_endpoints.py") {
+					if (entry.path().filename() != "generate_endpoints.py" && entry.path().filename() != "results") {
 						std::cout << entry.path().filename() << std::endl;
 					}
 				}
