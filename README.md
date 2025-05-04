@@ -9,7 +9,7 @@ The `assets/` directory just holds images used in this README.
 
 ## Setup
 
-This project uses CMake to handle building. It should automatically install SDL3 before compiling. The code assumes builds are located in `out/build/{$presetName}/`. The program has been tested on Windows and Debian.
+This project uses CMake to handle building. It should automatically download SDL3 before compiling. The code assumes builds are located in `out/build/{$presetName}/`. The program has been tested on Windows and Debian.
 ___
 ### Windows Build Instructions
 1. Install [Visual Studio](https://visualstudio.microsoft.com/)
