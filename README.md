@@ -1,9 +1,11 @@
 # CSCI 411 | Line Drawing Algorithms
 
+This repository holds the code for a CSCI 411 algorithms project. This project examines and implements two line drawing algorithms: Bresenham's and Xiaolin Wu's.
+
 ## Setup
 
 This project uses CMake to handle building. It should automatically install SDL3 before compiling. The code assumes builds are located in `out/build/`. The program has been tested on Windows and Debian.
-
+___
 ### Windows Build Instructions
 1. Install [Visual Studio](https://visualstudio.microsoft.com/)
 2. Clone the repository to the desired location:
@@ -15,6 +17,7 @@ This project uses CMake to handle building. It should automatically install SDL3
 5. The program will be ready to run once the start button near the top has changed to read `algo_project.exe`. Click it to run the program:
 
 	![Screenshot of the Visual Studio button to run a program, it reads algo_project.exe](/assets/vs_button_ready.png)
+___
 ### Linux Build Instructions (Debian-based)
 1. Clone the repository to the desired location and navigate to it:
 	```bash
@@ -50,7 +53,7 @@ This project uses CMake to handle building. It should automatically install SDL3
 	cd out/build/linux-debug
 	./algo_project
 	```
-
+___
 ### MacOS Build Instructions
 
 **Note:** As I do not have access to a Mac device to test the setup the following are estimated instructions created with the help of ChatGPT.
