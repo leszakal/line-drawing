@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');	// clear cin buffer
 		std::cout << std::endl;
 		if (input == 'q' || input == '4') {
-			std::cout << "Exitting program...";
+			std::cout << "Exitting program..." << std::endl;
 			exit(0);
 		}
 		else {
