@@ -47,7 +47,7 @@ void createWindowAndRender(std::vector<Point> &bresenham_points, std::vector<Poi
 		}
 
 		for (Point point : wu_points) {
-			SDL_SetRenderDrawColor(renderer, 255, 0, 0, point.gradient * 255);
+			SDL_SetRenderDrawColor(renderer, 255, 0, 0, point.intensity * 255);
 			SDL_RenderPoint(renderer, point.x, point.y);
 		}
 
