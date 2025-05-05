@@ -21,7 +21,7 @@ float XiaolinWuLine::rFracPart(float x) {
 	return 1 - fracPart(x);
 }
 
-void XiaolinWuLine::plotLineLow(std::vector<Point>& points, int x0, int y0, int x1, int y1) {
+void XiaolinWuLine::plotLineGradual(std::vector<Point>& points, int x0, int y0, int x1, int y1) {
 	float gradient;
 	float dx = x1 - x0;
 	float dy = y1 - y0;
@@ -107,10 +107,10 @@ void XiaolinWuLine::plotLineSteep(std::vector<Point>& points, int x0, int y0, in
 void XiaolinWuLine::plotLine(std::vector<Point>& points, int x0, int y0, int x1, int y1) {
 	if (abs(y1 - y0) < abs(x1 - x0)) {
 		if (x0 < x1) {
-			plotLineLow(points, x0, y0, x1, y1);
+			plotLineGradual(points, x0, y0, x1, y1);
 		}
 		else {
-			plotLineLow(points, x1, y1, x0, y0);
+			plotLineGradual(points, x1, y1, x0, y0);
 		}
 	}
 	else {

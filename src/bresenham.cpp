@@ -6,10 +6,10 @@
 void BresenhamLine::plotLine(std::vector<Point> &points, int x0, int y0, int x1, int y1) {
 	if (abs(y1 - y0) < abs(x1 - x0)) {
 		if (x0 < x1) {
-			plotLineLow(points, x0, y0, x1, y1);
+			plotLineGradual(points, x0, y0, x1, y1);
 		}
 		else {
-			plotLineLow(points, x1, y1, x0, y0);
+			plotLineGradual(points, x1, y1, x0, y0);
 		}
 	}
 	else {
@@ -22,7 +22,7 @@ void BresenhamLine::plotLine(std::vector<Point> &points, int x0, int y0, int x1,
 	}
 }
 
-void BresenhamLine::plotLineLow(std::vector<Point> &points, int x0, int y0, int x1, int y1) {
+void BresenhamLine::plotLineGradual(std::vector<Point> &points, int x0, int y0, int x1, int y1) {
 	int dx = x1 - x0;
 	int dy = y1 - y0;
 	int yi = 1;
