@@ -3,7 +3,7 @@
 This repository holds the code for a CSCI 411 algorithms project. This project examines and implements two line drawing algorithms: Bresenham's and Xiaolin Wu's.
 
 The `src/` directory holds all `.cpp` files. Header files can be found in `include/`.
-Test input files and the script used to generate them (`generate_endpoints.py`) are located in `tests/`. Results for the timed testing can found in `tests/results/`. 
+Test input files and the script used to generate them (`generate_endpoints.py`) are located in `tests/`. Results for the timed testing can found in `tests/results/`. The file `test-results.xlsx` can also be found there. It contains the calculations for mean times taken for each algorithm by line type. 
 
 The `assets/` directory just holds images used in this README. 
 
@@ -11,6 +11,8 @@ The `assets/` directory just holds images used in this README.
 ```cpp
 SDL_SetRenderLogicalPresentation(renderer, 300, 225, SDL_LOGICAL_PRESENTATION_LETTERBOX);
 ```
+
+**A note on grid orientation** -- The x values increase when going left to right. The y values increase when going top to bottom. As such, positive slopes will appear to travel from the top-left to the bottom-right.
 
 ## Setup
 
